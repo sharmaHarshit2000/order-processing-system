@@ -1,0 +1,31 @@
+{
+  "name": "order-processing-system",
+  "version": "1.0.0",
+  "description": "Complex order processing system using Redis, BullMQ, and Kafka",
+  "type": "module",
+  "main": "src/main.ts",
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "workers": "tsx src/workers.ts",
+    "kafka:consumers": "tsx src/consumers.ts",
+    "seed": "tsx src/db/seed.ts"
+  },
+  "dependencies": {
+    "bullmq": "^5.71.0",
+    "dotenv": "^17.3.1",
+    "express": "^4.18.2",
+    "ioredis": "^5.10.1",
+    "kafkajs": "^2.2.4",
+    "pg": "^8.12.0",
+    "redis": "^5.11.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.11.0",
+    "@types/uuid": "^9.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
