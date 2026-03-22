@@ -1011,19 +1011,23 @@ Redis `INCR`/`INCRBY` only work on integers. Storing `$1497.00` as `149700 cents
 | `npm run kafka:consumers` | Start all 3 Kafka consumer groups |
 | `npm run seed` | Run migrations + insert seed data |
 
+---
 
+## What's NOT Covered ❌
 
-What's NOT Covered ❌ (gaps if you want deep Redis mastery)
-Topic	Missing
-Redis Pub/Sub	real-time channel subscriptions — different from Kafka
-Redis Streams	persistent log with consumer groups (like Kafka but built into Redis)
-Redis Transactions (MULTI/EXEC)	atomic pipelines
-Redis Pipeline / batch	sending multiple commands in one round trip
-Redis Lua scripts	atomic custom logic (used in advanced rate limiters)
-Redis Hash type	storing objects field-by-field instead of JSON strings
-Redis Lists	simple queue/stack (LPUSH/RPOP)
-BullMQ QueueEvents	listening to queue-level events (progress, stalled)
-BullMQ Flow / Parent-Child jobs	complex job dependency graphs
-Kafka transactions	exactly-once semantics across produce + consume
-Kafka schema registry	Avro/Protobuf schema enforcement
-Kafka offset management	manual commit, seek to offset
+Gaps if you want deeper mastery:
+
+| Topic | What's Missing |
+|-------|---------------|
+| Redis Pub/Sub | Real-time channel subscriptions — different from Kafka |
+| Redis Streams | Persistent log with consumer groups (like Kafka but built into Redis) |
+| Redis Transactions (MULTI/EXEC) | Atomic pipelines |
+| Redis Pipeline / batch | Sending multiple commands in one round trip |
+| Redis Lua scripts | Atomic custom logic (used in advanced rate limiters) |
+| Redis Hash type | Storing objects field-by-field instead of JSON strings |
+| Redis Lists | Simple queue/stack (LPUSH/RPOP) |
+| BullMQ QueueEvents | Listening to queue-level events (progress, stalled) |
+| BullMQ Flow / Parent-Child jobs | Complex job dependency graphs |
+| Kafka transactions | Exactly-once semantics across produce + consume |
+| Kafka schema registry | Avro/Protobuf schema enforcement |
+| Kafka offset management | Manual commit, seek to offset |
